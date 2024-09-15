@@ -5,9 +5,10 @@
         <Style type = "text/css">
    			div {width:100%;}
 				div.left {width:50%;float:left;}
-				div.right {width:50%; text-align:center; background-color:#D8D8D8;float:right;}
-				form.main_T {border:3px solid black; width:700px; background-color:#585858;}
-            form.sub_T {border:1px solid black; width:400px; text-align:left;}
+				div.right {width:50%; text-align:center; background-color:#F2F2F2;float:right;}
+				form.main_F {border:3px solid black; width:700px; background-color:#585858;}
+            form.sub_F {border:1px solid black; width:400px;}
+            table.main_T {text-align:left;}
             H2 {color: #FFFFFF;}
             span {font-size:15pt; color:#FFFFFF;}
             li::marker {color:#FFFFFF;}
@@ -24,7 +25,7 @@
       <H1>청년CRM101 입과상담 신청하기</H1>
 
 		<!-- form 사용 -->
-      <form class="main_T">
+      <form class="main_F">
          <!-- 첫번째 섹션 / 입력 그룹-->
 			<section>
 				<fieldset>
@@ -89,8 +90,8 @@
          
    	<!-- Salesforce 이미지 -->
    	<img width ="300"  src="https://upload.wikimedia.org/wikipedia/commons/8/89/Salesforce_Users_Email_list.png">
-		<form class="sub_T">
-			<table>
+		<form class="sub_F">
+			<table class="main_T">
             <label>
 					<span>사용자이름</span><br>
             </label>
