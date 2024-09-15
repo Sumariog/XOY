@@ -3,23 +3,23 @@
     <head>
         <title>Hello Salesforce</title> 
         <Style type = "text/css">
-			table.main_T {border:3px solid black; width: 600px; background-color: #000000;}
+				form.main_T {border:3px solid black; width: 600px; background-color: #000000;}
             H2 {color: #FFFFFF;}
+            span {font-size:15pt;}
         </Style>
     </head>
     <body>
     	<!-- Salesforce 이미지 -->
-   	<img width ="600" src="https://upload.wikimedia.org/wikipedia/commons/8/89/Salesforce_Users_Email_list.png">
+   	<img width ="300" src="https://upload.wikimedia.org/wikipedia/commons/8/89/Salesforce_Users_Email_list.png">
 
       <!-- 상단제목 -->
       <H1>청년CRM101 입과상담 신청하기</H1>
 
 		<!-- form 사용 -->
       <form class="main_T">
-         <!-- 첫번째 섹션 -->
+         <!-- 첫번째 섹션 / 입력 그룹-->
 			<section>
          <H2>아래 희망하는 시간을 선택해주세요.(양일 신청 가능)</H2>
-         <!-- 시간 그룹 -->
 	         <fieldset>
 					<ul>
   	             <li>
@@ -42,34 +42,32 @@
 								<option value="1">1</option>
 								<option value="2">2</option>
 							</select>
-                     <span>시(오전 10시부터 오후 3시까지 1시간 단위 진행</span>                  
+                     <span>시(오전 10시부터 오후 3시까지 1시간 단위 진행)</span>                  
                </li>
 					</ul>
+
+            <H2>신청인 정보</H2>
+         		<ul>
+          		  <li>
+							<span>이름 </span>
+ 	                 <input type="text" required />
+  	             </li>
+   	            <li>
+    	              <span>직업 </span>
+							<input type="text" required />
+	               </li>
+	               <li>
+	                  <span>이메일 </span>
+	                  <input type="text" required />
+	               </li>
+	               <li>
+	                  <span>연락처 </span>
+	                  <input type="text" required />
+	               </li>
+					</ul>          
 	         </fieldset>
          </section>
-         <!-- 두번째 섹션 -->
-         <section>
-         <H2>신청인 정보</H2>
-         	<ul>
-          	  <li>
-						<span>이름 </span>
-                  <input type="text" required />
-               </li>
-               <li>
-                  <span>직업 </span>
-                  <input type="text" required />
-               </li>
-               <li>
-                  <span>이메일 </span>
-                  <input type="text" required />
-               </li>
-               <li>
-                  <span>연락처 </span>
-                  <input type="text" required />
-               </li>
-         	</ul>
-         </section>
-         <!-- 세번째 섹션 / 입력버튼추가 -->
+         <!-- 두번째 섹션 / 입력버튼추가 -->
          <section>
             <p>
                <button type="submit"> 신청 </button>
