@@ -7,7 +7,7 @@
 					div.left {width:50%;float:left;}
 					div.right {width:50%; background-color:#F2F2F2; float:right;}
 					form.main_F {border:3px solid black; width:700px; background-color:#585858;}
-					form.sub_F {width:400px; border-radius:2px; border:1px solid black; border-spacing:40px;}
+					form.sub_F {width:400px; border-radius:2px; border:1px solid #808080; border-spacing:40px;}
 					H2 {color: #FFFFFF;}
 					span {font-size:15pt; color:#FFFFFF;}
 					li::marker {color:#FFFFFF;}
@@ -90,23 +90,23 @@
       <div style="text-align:center;">
    	<img width="300px" src="https://upload.wikimedia.org/wikipedia/commons/8/89/Salesforce_Users_Email_list.png">
       </div>
-      <div style="text-align:center;">
+      <div>
       <form class="sub_F">
-            <p>
-            <label>
+            <p style="text-align:left;">
+            <label for="name">
 					<span style="color:#000000; font-size:12px">사용자이름</span><br>
             </label>
             </p>
             <p>
-            <input type="text" style="width:350px; height:50px; border-radius:4px;" required/><br>
+            <input type="text" id="name" style="width:350px; height:50px; border-radius:4px;" required/><br>
             </p>
             <p>
-				<label>
+				<label for="pass">
 					<span style="color:#000000; font-size:12px;">암호</span><br>
             </label>
             </p>
             <p>
-            <input type="text" style="width:350px; height:50px; border-radius:4px;" required/><br>
+            <input type="text" id="pass" style="width:350px; height:50px; border-radius:4px;" required/><br>
             </p>
             <p>
             <button type="submit" style="width:365px; height:50px; border-radius:4px; font-size:12px;">로그인</button><br>
