@@ -11,7 +11,11 @@
 					H2 {color: #FFFFFF;}
 					span {font-size:15pt; color:#FFFFFF;}
 					li::marker {color:#FFFFFF;}
+            	button.button_link{border:1px solid black; width:100px; height:50px; border-radius:4px; color:#000000; background-color:#FFFFFF;}
         </Style>
+      	<script>
+         	function redirectToSite(){window.location.href="https://www.salesforce.com/kr/form/trial/freetrial.jsp?d=70130000000Endc";}
+         </script>
     </head>
     <body>
       <div>
@@ -91,7 +95,7 @@
    	<img width="300px" src="https://upload.wikimedia.org/wikipedia/commons/8/89/Salesforce_Users_Email_list.png">
       <!-- 폼 영역 -->
       </div>
-      <form class="sub_F">
+      <form class="sub_F" method="POST">
             <p>
             <label for="name">
 					<span style="color:#000000; font-size:12px">사용자이름</span><br>
@@ -118,7 +122,7 @@
 		</form>
       <p>
       	<span style="color:#000000; font-size:12px;">고객이 아닙니까?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-      	<button type="submit" style="border:1px solid black; width:100px; height:50px; border-radius:4px; color:#000000; background-color:#FFFFFF;"> 무료 평가판</button>
+      	<button oneclick="redirectToSite()" class="button_link"> 무료 평가판</button>
       </p>
       </div>
     </body>
