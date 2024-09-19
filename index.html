@@ -4,18 +4,18 @@
 	<title>Hello Salesforce</title>
 	<style type = "text/css">
 		div.main {border:1px solid black; width:800px; margin:0 auto;}
-div.second {background-image:url(''); background-position:center; background-size:cover; background-attachment:fixed;}
-input {width:200px; boarder-radius:3px;}
+		div.second {background-image:url(''); background-position:center; background-size:cover; background-attachment:fixed;}
+		input {width:200px; boarder-radius:3px;}
 	</style>
-<script>
-	fucntion fieldCheck(){
-		let inputs = document.forms;
-		if(!inputs.company.value && !inputs.name.value && !inputs.email.value && !inputs.phone.value){
+	<script>
+		fucntion fieldCheck(){
+			let inputs = document.forms;
+			if(!inputs.company.value && !inputs.name.value && !inputs.email.value && !inputs.phone.value){
 			alert('신청 정보를 정확하게 입력해주세요.')
-		return false;
-		}
+			return false;
+			}
 	}
-<script>
+	</script>
 </head>
 <body>
 	<div class="main">
