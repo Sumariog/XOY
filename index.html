@@ -1,97 +1,100 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <title>Hello Salesforce</title> 
-        <Style type = "text/css">
-      		div {width:100%}
-      		div.left {width:50%; float:left; text-align:center; background-color:#FFFFFF; width:410px;}
-          div.right {width:50%; float:right; text-align:center; background-color:#000000;}
-         	table.left1 {border:20px solid red; width:400px; paddding:10px; background-color:#58D3F7; text-align:center; margin:10px;}
-        	table.right1 {width:400px; padding:30px; background-color:#08088A; color:#FFFFFF; text-align:left; margin:0 auto;}
-			table.right2 {width:400px; padding:30px; background-color:#FFFFFF; color:#0080FF; text-align:left; margin:0 auto;}
-            table.right3 {width:400px; padding:30px; background-color:#0080FF; color:#FFFFFF; text-align:left; margin:0 auto;}
-            H1 {font-size:40px; color:#0080FF;}
-            ul {margin:15px; padding:0;}
-        </Style>
-    </head>
-    <body>
-    <div>
-      <div class="left">
-      <table class="left1">
-         <tr heigth=30px ><td>글자를 가운데에 정렬하는 방법은?</td></tr>
-				 <tr><td></td></tr>
-         <tr height=30px><td><span style="color:yellow">글자 색을 노란색으로 만드는 방법은?</span></td></tr>
-         <tr height=30px><td></td></tr>
-         <tr height=30px><td><B>글자를 굵게 만드는 방법은?</B></td></tr>
-         <tr height=20px><td></td></tr>
-      </table>
-      </div>
-    	<div class="right">
-            <H1>{청년CRM 101 Curriculum}</H1>
-            <table class="right1">
-                <tr><td></td></tr>
-                <tr>
-                    <td>기초</td>
-                </tr>
-                <tr>
-                    <td style="font-size:15px;"><B>Full-stack 프로그래밍</B></td>
-                </tr>
-                <tr>
-                    <td style="font-size:14px;"><B>CRM 프로그래밍을 위한 선수 과목</B></td>
-                </tr>
-                <tr style="height:0.5px; background-color:#FFFFFF"><td></td></tr>
-                <tr><td>
-                    <ul>
-                        <li>Basic 프로그램밍 bootcamp</li>
-                        <li>DB/Query 프로그래밍</li>
-                        <li>객체지향 프로그래밍</li>
-                    </ul>
-                </td></tr>
-            </table>
-            <table>
-                <tr height=10px><td></td></tr>
-            </table>
-            <table class="right2">
-                <tr><td></td></tr>
-                <tr>
-                    <td>정규</td>
-                </tr>
-                <tr>
-                    <td style="font-size:15px;"><B>클라우드 CRM 개발자 과정</B></td>
-                </tr>
-                <tr>
-                    <td style="font-siez:14px;"><B>클라우드 CRM 환경에서<br>Low/No-code부터 Pro-code 구현까지<B></td>
-                </tr>
-                <tr style="height:0.5px; background-color:#DBDBDB"><td></td></tr>
-                <tr><td>
-                    <ul>
-                        <li>Salesforce Standard & Automation Tool</li>
-                        <li>Apex 프로그래밍</li>
-                    </ul>
-                </td></tr>                
-            </table>
-            <table>
-                <tr height=10px><td></td></tr>
-            </table>
-            <table class="right3">
-                <tr><td></td></tr>
-                <tr>
-                    <td>심화</td>
-                </tr>
-                <tr>
-                    <td style="font-size:15px;"><B>CRM 구축 프로젝트</B></td>
-                </tr>
-                <tr><td></td></tr>
-                <tr style="height:0.5px; background-color:#FFFFFF"><td></td></tr>
-                <tr height=3px><td></td></tr>
-                <tr>
-                    <td>실제 현장의 비즈니스 니즈와<br>Agile 방법론 기반으로 개발 프로젝트<br>진행</td>
-                </tr>                
-            </table>
-            <table>
-                <tr height=40px><td></td></tr>
-            </table>
-        </div>
-    </div>
-    </body>
+<head>
+	<title>Hello Salesforce</title>
+	<style type = "text/css">
+		div.main {border:1px solid black; width:800px; margin:0 auto;}
+div.second {background-image:url(''); background-position:center; background-size:cover; background-attachment:fixed;}
+input {width:200px; boarder-radius:3px;}
+	</style>
+<script>
+	fucntion fieldCheck(){
+		let inputs = document.forms;
+		if(!inputs.company.value && !inputs.name.value && !inputs.email.value && !inputs.phone.value){
+			alert('신청 정보를 정확하게 입력해주세요.')
+		return false;
+		}
+	}
+<script>
+</head>
+<body>
+	<div class="main">
+	<div>
+		<H1>Thermofisher Scientific Korea 고객 체험 센터 교육신청</H1>
+		<form method="POST" onsubmit="return fieldCheck();">
+		<section>
+			<H2>신청인 정보</H2>
+<P>
+<label for="company" >
+<span style="display:inline-block; width:100xp;">소속 :</span>
+</label>
+<input type="text" id="company" required/>
+</P>
+<P>
+<label for="name">
+<span style="display:inline-block; width:100xp;">이름 :</span>
+</label>
+<input type="text" id="name" required/>
+</P>
+<P>
+<label for="email">
+<span style="display:inline-block; width:100xp;">이메일 :</span>
+</label>
+<input type="text" id="email" required/>
+</P>
+<P>
+<label for="phone">
+<span style="display:inline-block; width:100xp;">연락처 :</span>
+</label>
+<input type="text" id="phone" required/>
+</P>
+<P>
+<span style="display:inline-block; width:300px;">마케팅 수신 동의(선택)</span>
+<input type="checkbox" value="Y">
+</P>
+		</section>
+		<section>
+		</section>
+			<H2>Thermofisher Scientific 알아보기</H2>
+		<section>
+			<button type="submit" id="submit" onclick="alert('정상적으로 제출되었습니다.')"> 지금 신청하기 </button>
+		<section>	
+		</form>
+	</div>
+<hr width="100px">
+	<div class="second">
+		<H1>써모피셔 사이언티픽은 어떤 회사인가요?</H1>
+		<table>
+		<tr>
+			<td><img width="30px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Thermo_Fisher_Scientific_logo.svg/2560px-Thermo_Fisher_Scientific_logo.svg.png"></td>
+			<td><B>써모피셔 사이언티픽<B>은 미국에 본사를 둔 생명과학 및 임상 연구 회사입니다. 분석 기기, 임상 개발 솔루션, 특수 진단, 실험실, 제약 및 생명공학 서비스의 글로벌 공급업체입니다. 써모피셔 사이언티픽은 매사추세츠주 월섬에 본사를 두고 있으며, 2006년 Thermo Electron과 Fisher Scientific의 합병을 통해 설립되었습니다. 써모피셔 사이언티픽은 <B>Life Technologies Corporation (2013), Alfa Aesar (2015), Affymetrix (2016), FEI Company (2016), BD Advanced Bioprocessing (2018), PPD (2021)</B>등 다양한 시약, 소모품, 기기 및 서비스 제공 업체를 인수했습니다.</td>
+		</tr>
+		<tr><td></td></tr>
+		<tr>
+			<td><img width="30px" src="https://static.vecteezy.com/system/resources/previews/015/873/652/large_2x/blood-test-tube-icon-in-flat-style-hematology-illustration-on-isolated-background-laboratory-flask-sign-business-concept-vector.jpg"></td>
+			<td><B>Thermo Fisher Scientific Inc.</B> is an American-headquartered life science and clinical research company. It is a global supplier of analytical instruments, clinical development solutions, specialty diagnostics, laboratory, pharmaceutical and biotechnology services. Based in <B>Waltham, Massachusetts</B>, Thermo Fisher was formed through the merger of Thermo Electron and Fisher Scientific in 2006. Thermo Fisher Scientific has acquired other reagent, consumable, instrumentation, and service providers, including <B>Life Technologies Corporation (2013), Alfa Aesar (2015), Affymetrix (2016), FEI Company (2016), BD Advanced Bioprocessing (2018),</B> and <B>PPD (2021)</B>.
+As of 2023, the company had a market capitalization of $202 billion. It ranked 97th on the <B>Fortune 500</B> list based on its 2022 annual revenue of US$44.92 billion.
+</td>
+		</tr>			
+		</table>
+	</div>
+<hr width="100px">
+<div>
+		<H1>써모피셔 사이언티픽에 대해 더 자세히 알아보시려면?</H1>
+		<table style="text-align:center;">
+		<tr>
+			<td><img width="20px" src=""></td>
+			<td><img width="20px" src=""></td>
+			<td><img width="20px" src=""></td>
+			<td><img width="20px" src=""></td>            
+		</tr>
+		<tr>
+			<td><a href="https://www.thermofisher.com/kr/ko/home/products-and-services/promotions/about-thermo-fisher-scientific-kr.html" target="_blank">Thermifhser Scientific Korea<br>Customer Experience Center<br>바로가기</a></td>
+			<td><a href="https://www.thermofisher.com/kr/ko/home/products-and-services/promotions/about-bdc-kr.html" target="_blank">Thermofisher Scientific Korea<br>Bioprocess Design Center<br>바로가기</a></td>
+            <td><a href="https://www.thermofisher.com/kr/ko/home/electron-microscopy/nanoports/giheung-nanoport.html" target="_blank">Thermofisher Scientific Korea<br>Nanoport CIC<br>바로가기</a></td>
+            <td><a href="https://www.youtube.com/@thermofishercustomerexperi7638" target="_blank">써모피셔 사이언티픽 코리아 유튜브<br>바로가기</a></td>
+		</tr>
+		</table>
+	</div>
+</body>
 </html>
