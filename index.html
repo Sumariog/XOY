@@ -4,7 +4,7 @@
 	<title>Hello Salesforce</title>
 	<style type = "text/css">
 		div.main {border:1px solid black; width:90%; margin:0 auto; padding:30px;}
-		div.first {width:300px;}
+		div.first {}
 		div.second {padding-bottom:30px;}
   		div.third {text-align:center;}
 		input {width:150px; boarder-radius:3px;}
@@ -29,7 +29,7 @@
 <div class="first">
 	<H1>Thermofisher Scientific Korea<br>고객 체험 센터 교육신청</H1>
 	<form method="POST" onsubmit="return fieldCheck();">
-		<section style="display:inline-block;">
+		<section style="display:inline-block; width:300px;">
 		<H2>신청인 정보</H2>
 		<P>
 		<label for="company" >
@@ -60,7 +60,7 @@
 		<input type="checkbox" value="Y">
 		</P>
 		</section>
-		<section style="display:inline-block; float:right;">
+		<section style="display:flex; position:relative;">
 			<H2>Thermofisher Scientific 알아보기</H2>
 		</section>
 		<section style="align-self:center;">
