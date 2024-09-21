@@ -26,8 +26,11 @@
 		fucntion fieldCheck(){
 			let inputs = document.forms;
 			if(!inputs.company.value && !inputs.name.value && !inputs.email.value && !inputs.phone.value){
-			alert('신청 정보를 정확하게 입력해주세요.')
+			alert('신청 정보를 정확하게 입력해주세요.');
 			return false;
+			} else {
+				alert('정상적으로 제출되었습니다.');
+				inputs.submit.submit();
 			}
 	}
 	</script>
@@ -38,7 +41,7 @@
 <H1>Thermofisher Scientific Korea<br>고객 체험 센터 교육신청</H1>
 </div>
 <div class="first">
-	<form method="POST" onsubmit="return fieldCheck();">
+	<form method="POST">
 		<div class="first_sub1">
 		<section class="first">
 		<H2>신청인 정보</H2>
@@ -78,7 +81,7 @@
 		</div>
 		<div class="first_sub2">
 		<section class="third">
-			<button type="submit" id="submit" onclick="alert('정상적으로 제출되었습니다.')"><B>지금 신청하기</B></button>
+			<button type="submit" id="submit" onclick="fieldCheck()"><B>지금 신청하기</B></button>
 		<section>	
 		</div>
 	</form>
