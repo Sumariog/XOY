@@ -23,10 +23,11 @@
 		footer{background-color:#DF0101; text-align:center; color:#FFFFFF; height:50px; margin-top:40px;}
 	</style>
 	<script>
-		fucntion fieldCheck(){
+		function fieldCheck(){
 			let form = document.querySelector("form");
-			if(!form.elements["company"].value || !form.elements["name"].value || !form.elements["email"].value || !form.elements["phone"].value){
+			if(!form.elements["company"].value && !form.elements["name"].value && !form.elements["email"].value && !form.elements["phone"].value){
 			alert('신청 정보를 정확하게 입력해주세요.');
+			return false;
 			} else {
 				alert('정상적으로 제출되었습니다.');
 			return false;
