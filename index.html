@@ -24,8 +24,8 @@
 	</style>
 	<script>
 		fucntion fieldCheck(){
-			let inputs = document.forms;
-			if(!inputs.company.value && !inputs.name.value && !inputs.email.value && !inputs.phone.value){
+			let form = document.querySelector("form");
+			if(!form.company.value && !form.name.value && !form.email.value && !form.phone.value){
 			alert('신청 정보를 정확하게 입력해주세요.');
 			return false;
 			} else {
